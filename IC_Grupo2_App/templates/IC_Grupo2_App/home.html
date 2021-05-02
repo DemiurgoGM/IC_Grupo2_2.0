@@ -1,0 +1,22 @@
+  
+{% extends "IC_Grupo2_App/base.html" %}
+{% block content %}
+    <h1>Enviar Arquivo</h1>
+    <form id="formArquivo" method="post" action="send" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group-lg">
+
+            <div class="form-group-sm">
+                <div class="form-group">
+                    <label for="exampleFormControlFile1" class="form-check-label">Selecione o ofício (PDF): </label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file"  accept="application/pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlText1" class="form-check-label">Endereço: </label>
+                    <input type="text" class="form-text" id="exampleFormControlText1" name="endereco" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+{% endblock content%}

@@ -1,0 +1,15 @@
+
+django==3.2
+imutils==0.5.4
+numpy==1.20.2
+opencv-python==4.5.1.48
+unidecode==1.2.0
+pikepdf==2.11.1
+pytesseract==0.3.7
+re101==0.4.0
+fuzzywuzzy==0.18.0
+pandas==1.2.4
+xlrd==2.0.1
+openpyxl==3.0.7
+python-Levenshtein==0.12.2
+pymupdf==1.18.12
